@@ -1,0 +1,41 @@
+\begin{figure}[H]
+    \centering
+    \begin{ganttchart}[
+      hgrid,
+      vgrid,
+      today=2,
+      group left shift=0,
+      group right shift=0,
+      group peaks tip position=0,
+      group height=.3,
+      y unit chart=0.7cm,
+    ]{1}{18}
+      \gantttitlelist{"Oct.","Nov.","Dec.","Janv.","Fevr","Mars","Avril","Mai","Juin"}{2} \\
+  
+      \ganttgroup{Concept}{1}{4} \\
+      \ganttbar[progress=75]{Concept Establishment}{1}{2} \\
+      \ganttbar[progress=0]{Scenario Writing}{3}{4} \\  
+      \ganttnewline
+  
+      \ganttgroup{Design}{5}{10} \\
+      \ganttbar[progress=0]{Texture Design}{5}{10} \\
+      \ganttbar[progress=0]{Texture Review}{8}{8} \\
+      \ganttbar[progress=0]{Integration}{9}{10} \\
+      \ganttnewline
+  
+      \ganttgroup{Programming}{9}{14} \\
+      \ganttbar[progress=0]{Proof of Concept / Test}{9}{14} \\
+      \ganttbar[progress=0]{Implementation / Development}{11}{13} \\
+      \ganttbar[progress=0]{Review / Debug / Publishing}{14}{14} \\
+      \ganttnewline
+    
+      \ganttgroup{Website}{5}{8} \\
+      \ganttbar[progress=0]{Design on figma}{5}{6} \\
+      \ganttbar[progress=0]{Web Development}{6}{8} \\
+      \ganttbar[progress=0]{Review / Debug / Publishing}{8}{8} \\
+      \ganttnewline
+  
+    \end{ganttchart}
+    \caption{Diagramme de Gantt}
+    \label{fig:diagramme_de_gantt}
+  \end{figure}
