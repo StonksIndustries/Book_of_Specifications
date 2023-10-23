@@ -11,32 +11,38 @@
 
 \geometry{margin=2.5cm}
 
+\newcommand{\gameName}{Lands of Stonkseria}
+
 \title{
-    Cahier des Charges projet \\
-    \textbf{Lands of Stonkseria}
-    \vspace{7cm}
+    Cahier des Charges \\
+    \textbf{\gameName}
+    \vspace{6cm}
 }
 \author{
-    Mohamed Aziz Ben Amor (Chief Executive Officer) \\
+    Mohamed Aziz Ben Amor (Directeur général) \\
     \texttt{mohamed-aziz.ben-amor@epita.fr}
     \vspace{0.5cm}\and
-    Martin Pasquier (Technical director) \\
-    \texttt{martin.pasquier@example.com}
+    Martin Pasquier (Directeur technique) \\
+    \texttt{martin.pasquier@epita.fr}
     \vspace{0.5cm}\and
-    Alexandre Cölsch (Game Designer) \\
+    Alexandre Cölsch (Concepteur de jeu) \\
     \texttt{alexandre.colsch@epita.fr}
     \vspace{0.5cm}\and
-    Ayemane Bouarbi (Concept Artist) \\
+    Ayemane Bouarbi (Directeur artistique) \\
     \texttt{ayemane.bouarbi@epita.fr}
     \vspace{0.5cm}\and
-    Michaël Museux (Software Engineer) \\
-    \texttt{martin.pasquier@example.com}
-    \vspace{1.5cm}\and
-    \textbf{EPITA} \\
-    \textbf{Stonks Industries} \\\\
+    Michaël Museux (Ingénieur logiciel) \\
+    \texttt{michael.museux@epita.fr}
 }
 
-\date{\today}
+\date{
+    \vspace{1.5cm}
+    \textbf{Stonks Industries} \\
+    \vspace{0.3cm}
+    \textbf{EPITA} \\
+    \vspace{1.5cm}
+    \today
+}
 
 \begin{document}
 
@@ -46,10 +52,16 @@
 \end{titlepage}
 
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
 \tableofcontents
 
 \newpage
 \section{Introduction}
+
+\input{cdcf/introduction.tex}
 
 
 \newpage
@@ -57,42 +69,38 @@
 
 \subsection{Origine et Nature du Projet}
 
+\input{cdcf/origine_nature.tex}
+
 \subsection{Objet de l'\'Etude}
+
+\input{cdcf/objet_etude.tex}
 
 \subsection{\'Etat de l'Art}
 
+\input{cdcf/etat_art.tex}
+
 \subsection{Notre Entreprise}
+
+\input{cdcf/entreprise.tex}
 
 \subsection{Notre \'Equipe}
 
+\input{cdcf/equipe.tex}
+
 \subsection{La Répartition des Tâches}
 
-L'attribution des tâches est primordiale pour le bon déroulement du projet.
-Il permet de voir qui est responsable de quelle tâche et de s'assurer que chaque tâche est bien assignée à quelqu'un. 
-
-Chaque tache est attribuée à un membre de l'équipe, il en est le responsable.
-On assigne en plus un suppléant à celles-ci, qui pourra prendre le relais en cas d'indisponibilité du responsable. 
-Ces rôles sont choisit en fonction des compétences de chacun, mais aussi en fonction de leurs disponibilités. 
-En effet une tache ne peux pas être laissé à l'abandon, elle pourrait mettre en retard tout le projet.
-
-Les tâches sur le long-terme (supérieur à une semaine de travail) sont listés dans le tableau ci-dessous (cd Figure \ref*{fig:repartition_des_taches}).
-
-\input{cdct/table.tex}
+\input{cdcf/repartition_taches.tex}
 
 \subsection{Avancement et Planification}
 
-Un Diagramme de Gantt est disponible ci-dessous (cf. Figure \ref{fig:diagramme_de_gantt}) pour illustrer la répartition des tâches dans le temps.
-Il permet d'avoir une vision globale du projet et de son avancement. C'est un bon outils pour prévoir les retards et les anticiper.
+\input{cdcf/avancement_planification.tex}
 
-\input{cdct/gantt.tex}
-
-
-\newpage
-\section{Cahier des Charges Technique}
+\input{cdcf/gantt.tex}
 
 
 \newpage
 \section{Conclusion}
 
+\input{format/conclusion.tex}
 
 \end{document}
