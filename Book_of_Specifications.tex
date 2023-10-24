@@ -15,12 +15,22 @@
 \usepackage{pgfgantt}
 
 
+\usepackage{titlesec}
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+
 \geometry{margin=2.5cm}
 
 \definecolor{darkgreen}{RGB}{0,130,0}
 \definecolor{darkblue}{RGB}{0,0,130}
 
 \newcommand{\gameName}{Lands of Stonkseria}
+\newcommand{\companyName}{Stonks Industries}
 \newcommand{\progressbar}[1]{
     \begin{tikzpicture}
         \fill[black!30] (0,0) rectangle (#1/100*2cm, 0.2);
@@ -55,7 +65,7 @@
 
 \date{
     \vspace{1.5cm}
-    \textbf{Stonks Industries} \\
+    \textbf{\companyName} \\
     \vspace{0.3cm}
     \textbf{EPITA} \\
     \vspace{1.5cm}
