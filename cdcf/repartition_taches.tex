@@ -1,95 +1,127 @@
-L'attribution des tâches est primordiale pour le bon déroulement du projet.
-Il permet de voir qui est responsable de quelle tâche et de s'assurer que chaque tâche est bien assignée à quelqu'un. 
+% Répartition : le cahier des charges doit contenir un planning détaillé de répartition des tâches par personne. 
+% Vous le présenterez sous la forme d’un tableau à deux entrées (tâches, personnes) avec deux personnes par tâche : le responsable et son suppléant.
+
+
+L'attribution des t\^aches est primordiale pour le bon déroulement du projet. 
+Chaque t\^ache est attribuée à un membre de l'équipe, il en est le responsable.
+C'est son rôle de veiller à ce que la tâche soit bien réalisée dans les temps et qu'elle remplisse le besoin pour lequel elle a été créée.
+Le responsable peut diviser sa tâche en sous-tâches, et les attribuer à d'autres membres de l'équipe.
+Cela lui permet de se concentrer sur la tâche principale, et d'arriver à un résultat plus rapidement.
 \\
 
-Chaque tache est attribuée à un membre de l'équipe, il en est le responsable.
-On assigne en plus un suppléant à celles-ci, qui pourra prendre le relais en cas d'indisponibilité du responsable. 
-Ces rôles sont choisis en fonction des compétences de chacun, mais aussi en fonction de leurs disponibilités. 
+On assigne en plus un suppl\'eant à celles-ci, qui pourra prendre le relais en cas d'indisponibilité du responsable. 
 En effet une tâche ne peut pas être laissée à l'abandon, elle pourrait mettre en retard tout le projet.
+Ces rôles sont choisis en fonction des compétences de chacun, mais aussi en fonction de leurs disponibilités dans le projet.
 \\
 
-Les tâches sur le long-terme (d'une durée supérieure à une semaine de travail) 
-sont listées dans le tableau ci-dessous (cf Figure \ref*{fig:repartition_des_taches}).
-\\
+Les tâches sur le long-terme (d'une durée supérieure à une semaine de travail)
+sont list\'ees dans le tableau ci-dessous (cf Figure \ref*{fig:repartition_des_taches}).
+Il permet de voir qui est responsable de quelle tâche et de s'assurer que chaque tâche est bien assign\'ee à quelqu'un.
+Ce tableau r\'eunit les t\^aches par th\`emes pour plus de lisibilit\'e.
 
 
 \begin{figure}[H]
     \centering
-    \begin{tabular}{|c|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|}
         \hline
-        \bfseries{Tache} & \bfseries{Responsable} & \bfseries{Suppl\'eant} & \bfseries{Date limite} \\
+        \bfseries{Cat\'egorie} & \bfseries{T\^ache} & \bfseries{Responsable} & \bfseries{Suppl\'eant} \\
+        \hline\hline
+        % Général
+        G\'en\'eral & Cahier des charges & Martin & Mohamed Aziz \\
+        \hline\hline
+        % Conceptualisation du jeu
+        \multirow{2}{*}{Conceptualisation du jeu} & \'Ecriture du sc\'enario & Alexandre & Ayemane \\
+        \cline{2-4}
+        & \'Ecriture des dialogues & Ayemane & Mohamed Aziz \\
+        \hline\hline
+        % Site Web
+        \multirow{3}{*}{Site Web} & Design du site web & Ayemane & Martin \\
+        \cline{2-4}
+        & Recherche technologie web & Martin & Michaël \\
+        \cline{2-4}
+        & Development du site web & Martin & Michaël \\
+        \hline\hline
+        % Texturing
+        \multirow{2}{*}{Texturing} & Design des interfaces (UI) & Mohamed Aziz & Ayemane \\
+        \cline{2-4}
+        & Design personnages / terrains / objet & Ayemane & Alexandre \\
+        \hline\hline
+        % Intégration des textures
+        \multirow{2}{*}{Intégration des Texturing} & Int\'egration des interfaces dans Godot & Mohamed Aziz &  \\
+        \cline{2-4}
+        & Int\'egration des textures dans Godot & Mohamed Aziz & \\
+        \hline\hline
+        % Level design
+        \multirow{2}{*}{Level design} & Faire un schema de la carte & Alexandre & Mohamed Aziz \\
+        \cline{2-4}
+        &Level mapping avec les textures & Alexandre & Ayemane \\
+        \hline\hline
+        % Système d'équipements
+        \multirow{3}{*}{Système d'équipements} & Listing items et objets (al\'eatoire) & Alexandre & Martin \\
+        \cline{2-4}
+        & Gestion al\'eatoire des objets & Alexandre & Martin \\
+        \cline{2-4}
+        & Equilibrage des objets & Alexandre & Martin \\
+        \hline\hline
+        % Multijoueur
+        & Multijoueur & Mohamed Aziz & Michaël \\
+        \hline\hline
+        % IA
+        \multirow{2}{*}{IA} & Pathfing des mobs & Michaël & Martin \\
+        \cline{2-4}
+        & Pathfing des mobs & Michaël & Martin \\
+        \hline\hline
+        % Musique et effet sonores
+        & Musique et effet sonores & Alexandre & Mohamed Aziz \\
         \hline
-        \hline
-        Cahier des charges & Martin & Aziz & \date{25/10/2023} \\
-        \hline
-        Conceptualisation du jeu & Alexandre & Ayemane & \date{25/10/2023} \\
-        \hline
-        \'Ecriture des dialogues & Michaël & Aziz & \date{25/10/2023} \\
-        \hline
-        \hline
-        Design Site web & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        D\'eveloppement site web & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        \hline
-        Charte artistique & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Design des interfaces en jeu & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Design personnages & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Design terrains & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Design objets & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        \hline
-        Int\'egration des textures personnages & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Int\'egration des textures terrains & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Int\'egration des textures objets & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        \hline
-        Design de la carte & Alexandre & Aziz & \date{01/02/2023} \\
-        \hline
-        Level mapping & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Animation & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        \hline
-        Listing items et objets & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Int\'egration des textures items et objets & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        \hline
-        Boutique & Martin & Michaël & \date{01/02/2023} \\
-        \hline
-        Armurerie & Martin & Michaël & \date{01/02/2023} \\
-        \hline
+
+
     \end{tabular}
-    \caption{Répartition des tâches}
+    \caption{R\'epartition des tâches}
     \label{fig:repartition_des_taches}
 \end{figure}
 
 
-% Ecriture du scenario
-% Ecriture des dialogues
+% Conceptualisation du jeu
+    % Écriture du scenario
+    % Écriture des dialogues
 
-% Design Site web 
-% Recherche technologie web
-% Dev du site
+% Programmation
+    % Proof of Concept / Test en Godot
+    % Implémentation / Développement
+    % Review / Debug / Publishing
 
-% Design des interfaces (UI)
-% Reflexion sur le design globale (dessin) 
-% design des personnages des textures
+% Site web
+    % Design du site
+    % Recherche technologie web
+    % Développement du site
+    
+% Texturing
+    % Réflexion sur le design globale (dessin)
+    % Design des interfaces (UI)
+    % Design personnages
+    % Design terrains
+    % Design objets
 
-% Intégration des texture perso dans godot
-% Proof of Concept / Test en Godot
-% Faire un schema de la carte 
-% Intégration textures monde
-% Level mapping et animation
+% Intégration des textures
+    % Intégration des interfaces
+    % Intégration des textures personnages
+    % Intégration des textures terrains
+    % Intégration des textures objets
 
-% Lising items et objets (aléatoire)
-% Intégration des textures items et objets
-% Boutique (aléatoire) -> PNG et inventaire
-% Armurerie (aléatoire) -> Forgeron
+% Level design
+    % Faire un schema de la carte 
+    % Level mapping avec les textures
+
+% Système d'équipements
+    % Listing items et objets (aléatoire)
+    % Boutique (aléatoire) -> PNG et inventaire
+    % Armurerie (aléatoire) -> Forgeron
+
+% Mutlijoueur
+
+% IA
+
+% Musique et effet sonores
+
+

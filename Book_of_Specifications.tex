@@ -6,12 +6,31 @@
 \usepackage[french]{babel}
 
 \usepackage{float}
-\usepackage{pgfgantt}
 \usepackage{geometry}
+\usepackage{tikz}
+
+\usepackage{multirow}
+\usepackage{pgfgantt}
+
 
 \geometry{margin=2.5cm}
 
 \newcommand{\gameName}{Lands of Stonkseria}
+\newcommand{\longprogressbar}[2]{
+    \begin{tikzpicture}
+        \fill[black!30] (0,0) rectangle (#1/100*3cm, 0.2);
+        \draw (0,0) rectangle (3cm, 0.2);
+    \end{tikzpicture}
+    \small{#1\%}
+}
+\newcommand{\shortprogressbar}[2]{
+    \begin{tikzpicture}
+        \fill[black!30] (0,0) rectangle (#1/100*1.2cm, 0.2);
+        \draw (0,0) rectangle (1.2cm, 0.2);
+    \end{tikzpicture}
+    \small{#1\%}
+}
+
 
 \title{
     Cahier des Charges \\
@@ -62,6 +81,7 @@
 \section{Introduction}
 
 \input{cdcf/introduction.tex}
+
 
 
 \newpage
