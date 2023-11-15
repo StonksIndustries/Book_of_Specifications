@@ -1,3 +1,3 @@
 # Book of Specifications
 
-The Book of Specifications of Lands of Stonkseria
+The Book of Specifications of Lands of Azerith
