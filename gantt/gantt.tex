@@ -11,7 +11,8 @@
   \begin{ganttchart}[
     hgrid,
     vgrid,
-    today=2,
+    % Today paramaters
+    today=4,
     today rule/.style={blue},
     group left shift=0,
     group right shift=0,
@@ -25,26 +26,28 @@
     
     % \ganttgroup{Concept}{1}{4} \\
     \ganttbar[progress=100,bar/.append style={fill=green!50}]{Cahier des charges}{1}{2} \\
-    \ganttbar[progress=75,bar/.append style={fill=green!50}]{Recherche du concept}{1}{2} \\
-    \ganttbar[progress=0]{\'Ecriture du scnénario}{3}{4} \\  
+    \ganttbar[progress=100,bar/.append style={fill=green!50}]{Recherche du concept}{1}{2} \\
+    \ganttbar[progress=100,bar/.append style={fill=green!50}]{\'Ecriture du scnénario}{3}{4} \\  
     \ganttnewline
     
     % \ganttgroup{Design}{5}{10} \\
-    \ganttbar[progress=0,bar/.append style={=white}]{Design des textures}{5}{10} \\
-    \ganttbar[progress=0]{Validation}{8}{8} \\
-    \ganttbar[progress=0]{Integration dans godot}{9}{10} \\
+    \ganttbar[progress=10,bar/.append style={=white}]{Design des textures}{4}{12} \\
+    \ganttbar[progress=0]{Validation}{7}{9} \\
+    \ganttbar[progress=0]{Integration dans godot}{9}{12} \\
     \ganttnewline
     
     % \ganttgroup{Programmation du jeu}{9}{14} \\
-    \ganttbar[progress=0]{Premiers tests}{9}{14} \\
-    \ganttbar[progress=0]{Développement }{11}{13} \\
+    \ganttbar[progress=0]{Premiers tests sur Godot}{5}{7} \\
+    \ganttbar[progress=0]{Développement}{6}{13} \\
+    \ganttbar[progress=0]{Réseau}{6}{13} \\
+    \ganttbar[progress=0]{IA}{10}{13} \\
     \ganttbar[progress=0]{Phase de débug / corection}{14}{14} \\
     \ganttnewline
     
     % \ganttgroup{Site web}{5}{8} \\
-    \ganttbar[progress=0]{Design du site web}{5}{6} \\
-    \ganttbar[progress=0]{Développement}{6}{8} \\
-    \ganttbar[progress=0]{Phase de débug / corection}{8}{8} \\
+    \ganttbar[progress=0]{Design du site web}{6}{9} \\
+    \ganttbar[progress=0]{Développement}{7}{8} \\
+    \ganttbar[progress=0]{Phase de débug / corection}{9}{9} \\
     \ganttnewline
     \ganttvrule[
       % Soutenance orale : 22 janvier 2024
